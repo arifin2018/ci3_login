@@ -73,7 +73,7 @@ class Auth extends CI_Controller
             $this->load->view('auth/Registration');
             $this->load->view('templates/footer');
         } else {
-            $data['Registration'] = $this->Registration_Model->registration();
+            $data['Registration'] = $this->Registration_Model->Registration();
             $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert">
             Congratulation! Your account has been created. Please Login buddy!
             </div>');
